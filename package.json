@@ -48,7 +48,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "setup": "node ./bin/setup.js",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "git": "git add . && git commit -m",
+    "deploy": "git push"
   },
   "repository": {
     "type": "git",

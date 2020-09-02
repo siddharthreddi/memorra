@@ -53,7 +53,6 @@ const IndexPage = () => {
       }
     }
   `)
-  console.log(data)
 
   return (
     <Layout>
@@ -94,7 +93,8 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="container py-12 lg:pb-16">
-        <div className="grid grid-cols-3 gap-4">
+        <p className="text-center text-3xl font-semibold m-5">Our Offerings</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="h-64">
             <Link to="/services">
               <div
@@ -102,6 +102,8 @@ const IndexPage = () => {
                 style={{
                   backgroundImage: `url(${data.service.childImageSharp.fluid.src})`,
                   backgroundSize: "100% 150%",
+                  animationDelay: `0.1s`,
+                  animationName: "fadeIn",
                 }}
               >
                 Services
@@ -166,6 +168,26 @@ const IndexPage = () => {
                 </div>
               </div>
             </Link>
+          </div>
+        </div>
+      </div>
+      <div className="bg-gray-100">
+        <div className="container py-12 lg:pb-16">
+          <p className="text-center text-3xl font-semibold m-5">Testimonials</p>
+          <div className="absolute top-0 left-0 mt-3 ml-4 md:mt-5 md:ml-12"></div>
+          <div>
+            <p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
+              Leverage agile frameworks to provide a robust synopsis for high
+              level overviews. Iterative approaches to corporate strategy foster
+              collaborative thinking to further the overall value proposition.
+              Organically grow the holistic world view of disruptive innovation
+              via workplace diversity and empowerment.
+            </p>
+            <p className="text-gray-800 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-lg md:text-xl">
+              Siddharth Reddy
+              <br />
+              <span>India</span>
+            </p>
           </div>
         </div>
       </div>
