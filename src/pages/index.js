@@ -5,6 +5,8 @@ import Hero from "../components/Hero"
 import Layout from "../layouts/Layout"
 import Newsletter from "../components/Newsletter"
 import SiteMetadata from "../components/SiteMetadata"
+import { Carousel } from "antd"
+import "antd/dist/antd.css"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -174,21 +176,51 @@ const IndexPage = () => {
       <div className="bg-gray-100">
         <div className="container py-12 lg:pb-16">
           <p className="text-center text-3xl font-semibold m-5">Testimonials</p>
-          <div className="absolute top-0 left-0 mt-3 ml-4 md:mt-5 md:ml-12"></div>
-          <div>
-            <p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
-              Leverage agile frameworks to provide a robust synopsis for high
-              level overviews. Iterative approaches to corporate strategy foster
-              collaborative thinking to further the overall value proposition.
-              Organically grow the holistic world view of disruptive innovation
-              via workplace diversity and empowerment.
-            </p>
-            <p className="text-gray-800 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-lg md:text-xl">
-              Siddharth Reddy
-              <br />
-              <span>India</span>
-            </p>
-          </div>
+
+          <Carousel autoplay>
+            <div>
+              <p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
+                Leverage agile frameworks to provide a robust synopsis for high
+                level overviews. Iterative approaches to corporate strategy
+                foster collaborative thinking to further the overall value
+                proposition. Organically grow the holistic world view of
+                disruptive innovation via workplace diversity and empowerment.
+              </p>
+              <p className="text-gray-800 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-lg md:text-xl">
+                Siddharth Reddy
+                <br />
+                <span>USA</span>
+              </p>
+            </div>
+            <div>
+              <p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
+                Leverage agile frameworks to provide a robust synopsis for high
+                level overviews. Iterative approaches to corporate strategy
+                foster collaborative thinking to further the overall value
+                proposition. Organically grow the holistic world view of
+                disruptive innovation via workplace diversity and empowerment.
+              </p>
+              <p className="text-gray-800 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-lg md:text-xl">
+                Arun
+                <br />
+                <span>India</span>
+              </p>
+            </div>
+            <div>
+              <p className="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl">
+                Leverage agile frameworks to provide a robust synopsis for high
+                level overviews. Iterative approaches to corporate strategy
+                foster collaborative thinking to further the overall value
+                proposition. Organically grow the holistic world view of
+                disruptive innovation via workplace diversity and empowerment.
+              </p>
+              <p className="text-gray-800 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-lg md:text-xl">
+                Sid2
+                <br />
+                <span>India</span>
+              </p>
+            </div>
+          </Carousel>
         </div>
       </div>
       <Newsletter />
